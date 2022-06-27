@@ -1,0 +1,14 @@
+
+  footer {
+    background-image: linear-gradient(to left, #3a3a3a, #38383e, #363642, #323447, #2d334b, #363e57, #3f4964, #485571, #65718a, #838da3, #a3abbd, #c3cad8);
+    color: #2d334b;
+    padding: 20px;
+    margin-top: 15px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+  }
+  

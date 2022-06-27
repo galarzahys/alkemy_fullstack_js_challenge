@@ -1,0 +1,168 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(187, 196, 196, 0.459);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  border: none;
+  margin-top: 0px;
+  color: white;
+}
+
+section {
+  background-color: rgb(240, 238, 234);
+  padding: 20px;
+  text-align: center;
+  color: rgb(27, 99, 5);
+}
+
+.bs_main_div {
+  width: 80%;
+  margin: auto;
+}
+
+.sub_header {
+  display: flex;
+  background-image: linear-gradient(to left, #3a3a3a, #38383e, #363642, #323447, #2d334b, #363e57, #3f4964, #485571, #65718a, #838da3, #a3abbd, #c3cad8);
+  border: none;
+  padding: none;
+  margin: none;
+  height: 7rem;
+}
+
+.image1 {
+  height: 100%;
+  padding: 0;
+}
+
+.titnav {
+  margin: auto;
+  margin-left: 5rem;
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
+.error {
+  color: rgb(247, 14, 14);
+}
+
+.btn_logout{
+  background-color: #f44336; 
+  border: none;
+  width: 150px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn_logout:hover {
+  color: #000;
+  text-shadow: 1px 1px 3px#000;
+}
+
+.btn_new{
+  width: 150px;
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn_new:hover {
+  color: #000;
+}
+
+
+.btn-success {
+  width: 150px;
+
+}
+
+.table_row {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+.bs_header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bs_balance {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.bs_ca {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 8rem;
+}
+
+.bs_ca h3 {
+  background-color: #000;
+  color: #fff;
+}
+
+.bs_sub {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.bs_in {
+  width: 50%;
+  background-color: rgba(108, 230, 150, 0.684);
+  color: rgb(0, 103, 31);
+}
+
+.bs_ex {
+  width: 50%;
+  background-color: rgba(230, 126, 108, 0.684);
+  color: rgb(103, 29, 0);
+}
+
+@media only screen and (max-width: 600px) {
+  .titnav {
+    width: 100%;
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+
+  .bs_sub {
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6rem;
+    flex-wrap: wrap;
+  }
+
+  .bs_in {
+    width: 100%;
+  }
+  .bs_ex {
+    width: 100%;
+  }
+
+  body {
+    font-size: smaller;
+  }
+
+
+}

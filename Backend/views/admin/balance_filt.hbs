@@ -1,0 +1,67 @@
+
+
+<div class="bs_main_div">
+
+<div class="bs_header">
+<p>Hi {{usuario}}! On the next table you will be able to modify the balance sheet. </p>
+<a class="btn_logout" href="/admin/login/logout"> Close session <i class="fas fa-sign-out-alt"></i></a>
+</div>
+        
+<div class="bs_balance">
+        
+        <div class="bs_ca">
+          <h3>Current Account:</h3>
+          <h2>$ {{totalBalance}}</h2> 
+        </div>
+        <div class="bs_sub">
+        <div class="bs_in">
+          <h3>Income:</h3>
+          <h4>$ {{sumPos}}</h4>
+        </div>
+        <div class="bs_ex">
+          <h3>Expenses:</h3>
+          <h4>$ {{sumNeg}}</h4>
+        </div>
+        </div>
+        
+    </div>
+       
+    <div class="bs_sub">
+            <h3>Account activity</h3>              
+            <a class="btn_new" href="/admin/balance/new/data"><i class="fa fa-plus"></i> New</a>
+    </div>
+    <table class="table">
+  <thead>
+    <tr class="table-dark">
+      <th scope="col" style="display: none;">#</th>
+      <th scope="col" class="text-center">Concept</th>
+      <th scope="col" class="text-center">Amount</th>
+      <th scope="col" class="text-center">Date</th>
+      <th scope="col" class="text-center"> Type
+        <select onchange="location = this.value;">
+          <option value=>Select</option>
+          <option value="/admin/balance">All</option>
+          <option value="/admin/balance/Profits">Profits</option>
+          <option value="/admin/balance/Expense">Expense</option>
+        </select>
+      </th>
+      <th scope="col">Options</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each getOperationsByType}}
+    <tr class="table_row">
+      <th scope="row" style="display: none;">{{id}}</th>
+      <td>{{concept}}</td>
+      <td>{{{amount}}}</td>
+      <td>{{{date}}}</td>
+      <td>{{{type}}}</td>
+      <td class="acciones">
+         <a class="btn btn-secondary" href="/admin/balance/modify/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+         <a class="btn btn-secondary" href="/admin/balance/delete/{{id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

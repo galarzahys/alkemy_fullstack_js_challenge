@@ -1,0 +1,22 @@
+<h3>Admin Access</h3>
+
+<div class="container" style="margin-top:100px">
+    <div class="container">
+        <form class="form-group" action="/admin/login" method="post">
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputUser" placeholder="Usuario" name="name">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" name="password">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        {{#if error}}
+            <p class="error">Invalid username or password</p>
+        {{/if}}
+    </div>
+</div>
